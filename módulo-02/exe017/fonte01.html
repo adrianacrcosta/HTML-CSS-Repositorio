@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas absolutas
+            cm, mm, in - polegada, px - pixel, pt - ponto, pc- paca
+            ponto e paca são referentes a medida de tipografia de papel - não recomendado para tela
+
+            Medidas relativas
+            em - tamanho atual da fonte - altura M, ex - altura x,rem, VW, Vh, %
+            mais utilizado é em
+            */
+            font-size: 16px /*não pode ter espaço. 16 px (igual a 1em) é o tamanho normal da fonte. Recomendado px ou em*/ ;
+            font-weight: normal /* lighter normal bold bolder*/;
+            font-style: normal /*italic*/;
+            text-decoration: underline;
+
+        }
+        h1,h2{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            font:italic bolder 3em arial /*shorthand font - uma mãozinha para fonte.
+            Reduze 4 linhas em uma única linha
+            A ordem é font-style - font-weight - font-size - font-family*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1> Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, possimus mollitia cumque nam maiores quas accusamus iure dicta consequuntur corporis, consectetur rerum aperiam quidem ullam quia! Mollitia tenetur dolorem aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti tempora quaerat at dignissimos inventore recusandae nihil, error culpa! Eius dolores eaque iure corrupti sunt, voluptatibus voluptatum exercitationem adipisci quae.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda nemo optio eos illo quia molestiae sit minima laudantium error! Placeat, voluptatum unde. Corporis corrupti autem quam. Quod non cupiditate hic!</p>
+    <h2>Subtítulo do exercício </h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, itaque vero accusamus facere ducimus blanditiis? Quasi quidem ratione provident nulla iusto. Voluptatem temporibus modi qui? Mollitia officiis assumenda qui perferendis.</p>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/*
+    em HTML é id e em CSS é "#" (só pode um elemento em único documento HTML, ou seja não pode ter
+    <h1 id="principal"> Criando Sites com HTML e CSS</h1>
+    <h1 id="principal"> Aprendendo HTML</h1>
+    Pode ter o mesmo id em arquivos difentes mas não no mesmo HTML
+    Neste caso, utiliza-se class)
+    em HTML é class e em CSS é "." (pode ser vários elementos).
+*/
+body{
+    background-color: rgb(205,255,203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(4, 109, 0);
+}    
+h1#principal{
+    text-align: center;
+    background-color: rgb(4, 109, 0);
+    color: white;
+}  
+h2{
+    color: rgb(51, 77, 49);
+}  
+.basico{
+    color: #3c805e;
+}
+.intermediario{
+    color: #80793c;
+}
+.avancado{
+    color:#803c3c ;
+}
+.destaque{
+    background-color: #c5c56070;
+}

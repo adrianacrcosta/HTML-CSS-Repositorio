@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tag</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1{
+            box-shadow:inset 2px 1px 14px 6px rgba(0, 0, 0, 0.5) ;
+            /*inset - borda interna*/
+        }
+        nav {
+            background-color: rgb(115, 110, 110);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+            /* descolocamento horizontal deslocamento vertical espalhamento 
+            Sempre coloca 1px 1px 1px black*/
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            /*
+            ou
+            border-radius: 20px 40 px;  20 para top left e botton right
+                                        40 para top right e botton left
+            ou
+
+            border-top-right-radius: 20px;
+            border-top-left-radius: 10px ;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 15px;
+            */
+
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 384);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article>aside {
+            /*aside é "filho de article"*/
+            background-color: rgb(188, 186, 186);
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam accusamus officia, pariatur totam
+                    at minus quam quis. Molestias autem iusto voluptas ipsa repellendus, error voluptatibus a quis quae
+                    perspiciatis labore.</p>
+                <aside>
+                    <p>Artigo escrito por xxx</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido pela Adriana Cláudia</p>
+
+    </footer>
+    <div id="bola">
+
+    </div>
+</body>
+
+</html>
